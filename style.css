@@ -1,0 +1,152 @@
+main{
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    width: calc(min(90rem, 90%));
+    margin: 0 auto;
+    min-height: 100vh;
+    column-gap: 3rem;
+    padding-block: min(20vh, 3rem);
+  }
+  
+  div span{
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+    color: #717171;
+  }
+  
+  main > div h1{
+    text-transform: capitalize;
+    letter-spacing: 0.8px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
+    background-color: #005baa;
+    background-image: linear-gradient( 45deg, #005baa, #000000);
+    background-size: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+  
+  h2, h3{
+    text-transform: capitalize;
+    letter-spacing: 0.8px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
+    background-color: #005baa;
+    background-image: linear-gradient( 45deg, #005baa, #000000);
+    background-size: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+  
+  main > div hr{
+    display: block;
+    background: #005baa;
+    height: 0.25rem;
+    width: 6.25rem;
+    border: none;
+    margin: 1.125rem 0 1.875rem 0;
+  }
+  
+  main > div p{
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  main > div > a{
+    border: 2px solid #c2c2c2;
+    margin-top: 2.188rem;
+  }
+  
+  main > div > a:hover{
+    border: 0.125rem solid #005baa;
+    color: #005baa;
+  }
+  
+  .social {
+    display: inline-block;
+    justify-content: center;
+    transition: box-shadow 0.2s ease-in-out,
+                transform 0.2s ease-in-out;
+    height: 36px;
+    margin-left: 3px;
+    width: 36px;
+  }
+  .social:focus,
+  .social:hover {
+    background-color: transparent;
+  }
+  .social + .social {
+    margin-left: 9px;
+    justify-content: center;
+  }
+  .social img {
+    max-width: 100%;
+    justify-content: center;
+  }
+  
+  .wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  .card{
+    flex: 0 1 calc(25% - 1em);
+    display: inline-block;
+    border: 2px solid #fff;
+    box-shadow: 1px 1px 15px #ccc;
+    box-sizing: content-box;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    justify-content: center;
+  }
+  
+  .card-body{
+    background: #fff;
+    vertical-align: top;
+  }
+  
+  .card-content{
+    text-align: left;
+    color: #333;
+    padding: 15px;
+  }
+  .card-text{
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    overflow: hidden;
+  }
+  .card:hover{
+    box-shadow: 08px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  a{
+    display: inline-block;
+    padding: 1px 1px 7px 1px;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 #075ba6;
+    color: #075ba6;
+    transition: color .30s ease-in-out, box-shadow .30s ease-in-out, cover
+  }
+  a:hover{
+    box-shadow: inset 100px 0 0 0  #428cfc;
+    color: white;
+  }
